@@ -4,8 +4,8 @@
 # In[5]:
 
 
-import yfinance as yf #imports yahoo finance library and changes name to yf
-import numpy as np #imports numpy, a math function library
+import yfinance as yf
+import numpy as np 
 import matplotlib.pyplot as plt 
 import math
 import statistics
@@ -54,7 +54,6 @@ plt.axhline(mean, color = 'black')
 print("{} will result in an average of ${}gain to ${} gain after {} days with {}% certainity.".format(stock_tag, str(low - initial), str(high - initial), future, certainity))
 
 
-# In[ ]:
 
 
 
