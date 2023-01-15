@@ -47,10 +47,10 @@ for i in range(500):
 mean = np.mean(mylist)
 std_dev = statistics.stdev(mylist) 
 low, high = st.norm.interval(alpha=int(certainity) / 100, loc=mean, scale=st.sem(mylist))
-print(initial, mean, low, high)
 plt.axhline(low, color = 'red')
 plt.axhline(high, color = 'green')
 plt.axhline(mean, color = 'black')
+
 print("{} will result in an average of ${}gain to ${} gain after {} days with {}% certainity.".format(stock_tag, str(low - initial), str(high - initial), future, certainity))
 
 
