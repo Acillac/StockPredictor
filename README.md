@@ -1,4 +1,4 @@
-# StockPredictor
+# Monte Carlo Stock Price Predictor
 
 Project
 
