@@ -28,7 +28,7 @@ df = yf.download(stock_tag)
 
 adj_close = df['Adj Close']
 if int(history_basis) * 252 < len(adj_close):
-    adj_close = adj_close[len(adj_close) - 252 * int(history_basis):]
+    adj_close = adj_close[-(252 * int(history_basis)):]
 
 returns = np.log(1+ adj_close.pct_change()) 
 mu, sigma= returns.mean(), returns.std() 
