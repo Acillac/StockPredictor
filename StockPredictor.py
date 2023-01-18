@@ -51,7 +51,7 @@ plt.axhline(low, color = 'red')
 plt.axhline(high, color = 'green')
 plt.axhline(mean, color = 'black')
 
-print("{} will result in an average of ${}gain to ${} gain after {} days with {}% certainity.".format(stock_tag, str(low - initial), str(high - initial), future, certainity))
+print("{} will result in an average of ${} gain to ${} gain after {} days with {}% certainity.".format(stock_tag, str(low - initial), str(high - initial), future, certainity))
 
 
 
